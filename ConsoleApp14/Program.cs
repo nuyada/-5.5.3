@@ -20,7 +20,7 @@ namespace ConsoleApp14
             Echo(str, deep);
 
             Console.ReadKey();
-
+            
 
         }
         static void Echo(string phrase, int deep)
@@ -33,6 +33,7 @@ namespace ConsoleApp14
                 modif = modif.Remove(0, 2);
                 
             }
+            Console.BackgroundColor = (ConsoleColor)deep;
             Console.WriteLine("..." + modif);
             if (deep > 1)
             {
